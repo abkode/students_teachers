@@ -4,6 +4,7 @@ class CreateTeachers < ActiveRecord::Migration
     # Add code to create the table here
     # HINT: check out ActiveRecord::Migration.create_table
     create_table :teachers do |t|
+      t.has_many :student
     	t.string :name
     	t.string :email
     	t.string :address

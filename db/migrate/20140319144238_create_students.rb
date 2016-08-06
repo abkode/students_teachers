@@ -4,6 +4,7 @@ class CreateStudents < ActiveRecord::Migration
     # Add code to create the table here
     # HINT: check out ActiveRecord::Migration.create_table
     create_table :students do |t|
+      t.belongs_to :teacher
       t.string :first_name
       t.string :last_name
     	t.string :gender
